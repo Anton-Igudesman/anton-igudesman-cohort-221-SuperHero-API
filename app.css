@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+  }
+  .text {
+    padding: 10px
+  }
+  
+  #hero-button-container {
+    display: flex;
+  }
+  
+  #hero-image {
+    max-height: 200px;
+    border-radius: 5px;
+  }
+  
+  #search-hero {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  #get-bio {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+  }
