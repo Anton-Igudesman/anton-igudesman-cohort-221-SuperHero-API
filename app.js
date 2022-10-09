@@ -107,11 +107,16 @@ async function getHeroId(name) {
       method: 'GET'
     })
     const data = await response.json()
-    idOutput.textContent = `${name}'s ID: ${data.results[0].id}`;
-    idValue = data.results[0].id
+    if (data === 'undefined') {
+      throw new Error ("This Superhero was not found - try alternate spelling");
+  }
     
+    idValue = data.results[0].id
+    console.log(idValue);
+    idOutput.textContent = `${name}'s ID: ${idValue}`;
+  
   }
   catch (err) {
-    console.error(err)
+    console.log(`Error: ${err.message}`);
   }
 }
